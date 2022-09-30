@@ -77,4 +77,4 @@ NOTE: If you make another change to the config file, you must force DWM to rebui
 `$ sudo xbps-install -R hostdir/binpkgs -f st`
 
 
-## NOTE: The same is true for other suckless tools.
+### NOTE: The same is true for other suckless tools.
