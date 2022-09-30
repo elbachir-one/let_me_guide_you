@@ -50,7 +50,7 @@
 `$ sudo xbps-install -R hostdir/binpkgs dwm`
 
 
-NOTE: If you make another change to the config file, you must force DWM to rebuild and install.
+### NOTE: If you make another change to the config file, you must force DWM to rebuild and install.
 
 `$ ./xbps-src -f pkg dwm`
 `$ sudo xbps-install -R hostdir/binpkgs -f dwm`
