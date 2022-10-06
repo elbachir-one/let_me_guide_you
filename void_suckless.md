@@ -28,31 +28,37 @@
 4. Find the package you want to install, in this case, DWM ST Dmenu.
 
 `$ ls srcpkgs/ | grep dwm`
+
 `$ ls srcpkgs/ | grep st`
+
 `$ ls srcpkgs/ | grep dmenu`
 
 
 5. Extracting the dwm source code.
 
 `$ ./xbps-src extract dwm`
+
 `$ ls masterdir/builddir/dwm{version}/`
 
 
 6. Create a files directory within the dwm directory to store the configuration file.
 
 `$ mkdir -p srcpkgs/dwm/files`
+
 `$ cp masterdir/builddir/dwm{version}/config.def.h srcpkgs/dwm/files/config.h`
 
 
 7. After modifying the config.h for dwm and putting in your config now, it is time to build and install dwm.
 
 `$ ./xbps-src pkg dwm`
+
 `$ sudo xbps-install -R hostdir/binpkgs dwm`
 
 
 ### NOTE: If you make another change to the config file, you must force DWM to rebuild and install.
 
 `$ ./xbps-src -f pkg dwm`
+
 `$ sudo xbps-install -R hostdir/binpkgs -f dwm`
 
 
@@ -72,8 +78,11 @@
 3. Using the patch, as well as building and installing st.
 
 `$ ./xbps-src extract st`
+
 `$ cp masterdir/builddir/st{version}/config.def.h srcpkgs/st/files/config.h`
+
 `$ ./xbps -f pkg st`
+
 `$ sudo xbps-install -R hostdir/binpkgs -f st`
 
 
