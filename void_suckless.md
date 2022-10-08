@@ -72,7 +72,7 @@
 
 2. Download any patch you want and place it in the patches directory.
 
-`$ ls srcpkgs/st/patches/<patch_name>.diff`
+`$ ls srcpkgs/st/patches/`
 
 
 3. Using the patch, as well as building and installing st.
